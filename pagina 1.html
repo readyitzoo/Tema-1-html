@@ -5,12 +5,28 @@
         table {
             font-family: Arial, sans-serif;
             border-collapse: collapse;
-            widtd: 100%;
+            width: 100%;
         }
         td, th {
-            border: 1px solid #bbbea7;
+            border: 2px solid;
             text-align: left;
             padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: yellow;
+        }
+        tr:nth-child(odd) {
+            background-color: palegoldenrod;
+        }
+        tr:hover {
+            background-color: aqua;
+        }
+        th{
+            text-align: center;
+        }
+        p{
+            margin-right: 50px;
+            word-spacing: 1px;
         }
 
         </style> 
@@ -20,9 +36,10 @@
         
     </head>
     <body> 
-        <h3>
+        <h1 style="border: 2px dotted; border-color: red; border-radius: 10px; margin-right: 570px;">
             <i>Dilirici Mihai</i>
-        </h3>
+        </h1>
+        <p> Pentru a primi alte retete pe email sau pentru a dona orice suma paginii, intrati <a href="pagina%202.html">aici </a> </p> <br>
         <p> Aceasta reteta este una clasica, deci avem 3 pasi:</p>
         <ol>
             <a href="#ingrediente">
@@ -84,7 +101,7 @@
             <tr>
                 <th>Preferinta</th>
                 <th>Mod de obtinere</th>
-                <th>Contraindicatii</th>
+                <th style = "border: 2px dotted; border-color: red">Contraindicatii</th>
             </tr>
             <tr>
                 <td>Mai crocanta</td>
