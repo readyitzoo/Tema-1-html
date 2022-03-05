@@ -45,8 +45,6 @@
       .drop-content {
         display: none;
         position: absolute;
-        min-width: 200px;
-        z-index: 1;
       }
       .dropdown:hover .drop-content {
         display: block;
@@ -54,7 +52,7 @@
       .drop-content a {
         display: inline-block;
         color: black;
-        padding: 5px;
+        padding: 8px;
         padding-right: 90px;
         margin-right: 70px;
         background-color: green;
@@ -75,9 +73,10 @@
     </style>
     <title>Reteta de placinta cu branza telemea</title>
   </head>
-  <body style="background-color: lightcyan;">
+  <body style="background-color: lightcyan">
     <nav>
       <ul class="nav_bar">
+        <li><img src="hochland.jpg" width="50" alt="logo" /></li>
         <li><a href="pagina%202.html" class="pag2"> pagina 2</a></li>
         <li class="dropdown">
           <div class="drop-btn">Sectiuni</div>
@@ -103,34 +102,41 @@
     </h1>
     <br />
     <ul>
-      <li><a id="ingrediente">Ingrediente:</a></li>
-      <br /><br />
+      <li><a id="ingrediente">Ingrediente:</a> <br /><br /></li>
+
       <li style="list-style-type: none">
         <ol>
           <li>
             <strong> 750g telemea </strong>
             <p>Aceasta ar trebui sa arate cam asa:</p>
             <br />
-            <img src="telemea.jpg" alt="telemea" width="300" />
+            <img src="telemea.jpg" alt="telemea" width="250" />
+            <img src="telemea_2.jpg" alt="telemea2" width="250" />
+            <img src="telemea_3.jpg" alt="telemea3" width="250" />
+            <br /><br />
           </li>
 
           <li>
             <strong>foile de placinta</strong> <br />
             <img src="foi_placinta.png" alt="foi de placinta" width="300" />
             <br />
-            <p>Alte ingrediente:</p>
+            <p
+              style="background-color: pink; padding: 10px; margin-right: 800px"
+            >
+              Alte ingrediente:
+            </p>
           </li>
           <li>4 oua</li>
           <li>250 g smantana 20-30% grasime</li>
           <li>100 ml ulei pentru foi</li>
           <li>piper negru macinat</li>
           <li>o legatura de marar proaspat</li>
-          <li>30 g seminte de susan</li>
+          <li>30 g seminte de susan <br /><br /></li>
         </ol>
       </li>
 
-      <li><a id="preparare">Mod de preparare :</a></li>
-      <br /><br />
+      <li><a id="preparare">Mod de preparare :</a> <br /><br /></li>
+
       <li style="list-style-type: none">
         <ol>
           <li>Pregatirea:</li>
@@ -202,9 +208,9 @@
           </li>
         </ol>
       </li>
+      
+      <li><a id="servire">Mod de servire :</a> <br /><br /></li>
 
-      <li><a id="servire">Mod de servire :</a></li>
-      <br /><br />
       <li style="list-style-type: none">
         <p>
           Placinta se taie in felii de forma dreptunghiulara si se aseaza pe o
