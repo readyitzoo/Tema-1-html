@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ro" >
+<html lang="ro">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
     <style>
@@ -14,7 +14,7 @@
       th {
         border: 2px solid;
         text-align: left;
-        padding: 8px;
+        padding: 12px;
       }
       tr:nth-child(even) {
         background-color: yellow;
@@ -32,10 +32,65 @@
         margin-right: 50px;
         word-spacing: 1px;
       }
+      .nav_bar {
+        background-color: lightslategray;
+        padding-right: 100px;
+        list-style-type: none;
+        display: flex;
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: row;
+      }
+      .drop-content {
+        display: none;
+        position: absolute;
+        min-width: 200px;
+        z-index: 1;
+      }
+      .dropdown:hover .drop-content {
+        display: block;
+      }
+      .drop-content a {
+        display: inline-block;
+        color: black;
+        padding: 5px;
+        padding-right: 90px;
+        margin-right: 70px;
+        background-color: green;
+        text-align: left;
+        text-decoration: none;
+      }
+      .drop-content a:hover {
+        background-color: lightblue;
+      }
+      .pag2,
+      .dropdown {
+        text-decoration: none;
+        color: yellowgreen;
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+      }
     </style>
     <title>Reteta de placinta cu branza telemea</title>
   </head>
-  <body>
+  <body style="background-color: lightcyan;">
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="pagina%202.html" class="pag2"> pagina 2</a></li>
+        <li class="dropdown">
+          <div class="drop-btn">Sectiuni</div>
+          <div class="drop-content">
+            <a href="#ingrediente">Ingrediente</a>
+            <a href="#preparare">Mod de preparare</a>
+            <a href="#servire">Mod de servire</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
     <h1
       style="
         border: 2px dotted;
@@ -46,20 +101,11 @@
     >
       <i>Dilirici Mihai</i>
     </h1>
-    <p>
-      Pentru a primi alte retete pe email sau pentru a dona orice suma paginii,
-      intrati <a href="pagina%202.html">aici </a>
-    </p>
     <br />
-    <p>Aceasta reteta este una clasica, deci avem 3 pasi:</p>
-    <ol>
-      <li><a href="#ingrediente">Ingrediente</a></li>
-      <li><a href="#preparare">Mod de preparare</a></li>
-      <li><a href="#servire">Mod de servire</a></li>
-    </ol>
     <ul>
       <li><a id="ingrediente">Ingrediente:</a></li>
-      <li>
+      <br /><br />
+      <li style="list-style-type: none">
         <ol>
           <li>
             <strong> 750g telemea </strong>
@@ -84,7 +130,8 @@
       </li>
 
       <li><a id="preparare">Mod de preparare :</a></li>
-      <li>
+      <br /><br />
+      <li style="list-style-type: none">
         <ol>
           <li>Pregatirea:</li>
           <li>
@@ -157,7 +204,8 @@
       </li>
 
       <li><a id="servire">Mod de servire :</a></li>
-      <li>
+      <br /><br />
+      <li style="list-style-type: none">
         <p>
           Placinta se taie in felii de forma dreptunghiulara si se aseaza pe o
           farfurie plata. Se poate servi impreuna cu un pahar de lapte cald sau
@@ -165,7 +213,7 @@
         </p>
       </li>
     </ul>
-
+    <br /><br />
     <i>
       Mai jos puteti consulta un tabel de masuratori, selectand o optiune sau
       mai multe in functie de gusturi:</i
