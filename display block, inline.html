@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <nav></nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        height: 120px;
+      }
+      .div1_1 {
+        background-color: orange;
+        flex-grow: 1;
+        text-align: center;
+        margin: auto;
+        padding: 60px;
+      }
+      .div1_2 {
+        background-color: brown;
+        flex-grow: 1;
+        text-align: center;
+        margin: auto;
+        padding: 60px;
+      }
+      .container2 {
+        display: flex;
+        justify-content: center;
+      }
+      .container3 {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <div class="container">
+      <div class="div1_1"><p>div 2</p></div>
+      <div class="div1_2"><p>div 1</p></div>
+    <br>
+    <br>
+    <br>
+    
+    </div>
+    <div class="container2">
+      <div style="background-color: yellow; padding: 100px; margin-right: -50px; z-index: 1;"><p> div 1</p></div>
+      <div style="background-color: red; padding: 100px"><p> div 2</p></div>
+      <div style="background-color: green; padding: 100px; margin-left: -50px; z-index: 2;"><p> div 3</p></div>
+    </div>
+
+    <div class="container3">
+      <div style="flex-grow: 2; background-color: pink; padding: 50px; margin: 20px;"><p> div 2</p></div>
+      <div style="flex-grow: 1; background-color: purple;  padding: 50px; margin: 20px;"><p> div 1</p></div>
+      <div style="flex-grow: 1; background-color: plum;  padding: 50px; margin: 20px;" ><p> div 3</p></div>
+    </div>
+
+  </body>
+</html>
