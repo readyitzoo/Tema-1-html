@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-        <style>
-            .divsus {
-                display: flex;
-                height: 50%   ;
-                width: 100%;
-                background-color: red;
-                gap: 10px
-            }
-            .div1234{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                margin: 10px;
-
-            }
-            .div567{
-                display: flex;
-                flex-direction: column-reverse;
-                width: 100%;
-                height: 100%;
-            }
-            .div89{
-                display: flex;
-                flex-direction: row-reverse;
-                width: 100%;
-                height: 100%;
-
-            }
-            .divjos{
-                display: flex;
-                width: 100%;
-                height: 100%;
-            }
-            .num{
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                background-color: green;
-            }
-
-        </style>
-    </head>
-    <body style="height: 100%;">
-        <div class="divsus">
-            <div class="div1234" style="order: 1;">
-                <div class="num"> 1 </div>
-                <div class="num"> 2 </div>
-            </div>
-            <div class="div1234" style="order: 4;">
-                <div class="num"> 3 </div>
-                <div class="num"> 4 </div>
-            </div>
-            <div class="div567" style="order: 3;">
-                <div class="num"> 5 </div>
-                <div class="num"> 6 </div>
-                <div class="num"> 7 </div>
-            </div>
-            <div class="div89" style="order: 2;">
-                <div class="num"> 8 </div>
-                <div class="num"> 9 </div>
-            </div>
-        </div>
-        <div class="divjos">
-            <div class="num">
-                10
-            </div>
-        </div>
-    </body>
+    <style>
+      .divsus {
+        display: flex;
+        height: 50vw;
+        width: 100%;
+        background-color: red;
+      }
+      .div1234 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px;
+      }
+      .div567 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 5px;
+      }
+      .div89 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 5px;
+      }
+      .divjos {
+        display: flex;
+        height: 30vw;
+        margin: 5px;
+        background-color: aqua;
+      }
+      .num {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divsus">
+      <div class="div1234" style="order: 1">
+        <div class="num">1</div>
+        <div class="num">2</div>
+      </div>
+      <div class="div1234" style="order: 4">
+        <div class="num">3</div>
+        <div class="num">4</div>
+      </div>
+      <div class="div567" style="order: 3">
+        <div class="num">5</div>
+        <div class="num">6</div>
+        <div class="num">7</div>
+      </div>
+      <div class="div89" style="order: 2">
+        <div class="num" style="width: 20%">8</div>
+        <div class="num" style="width: 80%">9</div>
+      </div>
+    </div>
+    <div class="divjos">
+      <div class="num">10</div>
+    </div>
+  </body>
 </html>
