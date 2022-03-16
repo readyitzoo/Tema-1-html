@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <style>
+      @keyframes schimba {
+        0% {
+          background-color: aquamarine;
+          left: 0px;
+          top: 0px;
+        }
+        50% {
+          background-color: brown;
+          left: 15px;
+          top: 15px;
+        }
+        100% {
+          background-color: black;
+          left: 50px;
+          top: 50px;
+        }
+      }
+      .tabel {
+        animation-name: schimba;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        transition: width 2s, height 0.9s;
+        display: grid;
+        width: 100%;
+        height: 30vw;
+        grid-gap: 10px;
+        background-color: aquamarine;
+        border: 2px;
+        grid-template-areas:
+          "unu unu doi doi trei"
+          "patru patru cinci cinci sase"
+          "patru patru sapte sapte opt"
+          "noua doispe doispe doispe zece"
+          "unspe doispe doispe doispe .";
+      }
+      .tabel:hover {
+        width: 50%;
+        height: 50vw;
+      }
+      .item1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        grid-area: unu;
+        background-color: red;
+      }
+      .item2 {
+        height: 100%;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: doi;
+      }
+      .item3 {
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: trei;
+      }
+      .item4 {
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: patru;
+      }
+      .item5 {
+        height: 100%;
+        background-color: lightgoldenrodyellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: cinci;
+      }
+      .item6 {
+        height: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: sase;
+      }
+      .item7 {
+        height: 100%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: sapte;
+      }
+      .item8 {
+        height: 100%;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: opt;
+      }
+      .item9 {
+        height: 100%;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: noua;
+      }
+      .item10 {
+        height: 100%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: zece;
+      }
+      .item11 {
+        height: 100%;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: unspe;
+      }
+      .item12 {
+        height: 100%;
+        background-color: yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: doispe;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabel">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+    </div>
+  </body>
+</html>
